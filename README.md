@@ -3,7 +3,7 @@
 ## Methodology
 
 ### Dataset
-Five Spanish historical manuscript sources (16th–19th century) provided as PDF scans with ground truth transcriptions in DOCX format. Sources span notarial documents, legal proceedings, and inquisition records.
+Five Spanish historical manuscript sources (17th century) are provided as PDF scans with ground truth transcriptions in DOCX format. Sources span notarial documents, legal proceedings, and inquisition records.
 
 ### Pipeline Overview
 
@@ -11,7 +11,7 @@ Five Spanish historical manuscript sources (16th–19th century) provided as PDF
 GPT-4.1 visually analyzes the first page of each source and produces a JSON profile capturing: script style, letter formations (u/v, f/s, long-s), abbreviation inventory, ink quality, show-through severity, dropcap presence, marginalia position, and line density. Generic curator rules are applied uniformly across all sources (ç→z, u/v interchangeability, tilde expansions). The profile is saved to disk and reused for all subsequent pages of the same source — one-time cost per source, not per page. No ground truth is required for profiling.
 
 **Stage 1 — Image Preprocessing (layout detection only)**
-Each page is converted from PDF at 150 DPI. A binary image is produced using CLAHE contrast enhancement and Sauvola adaptive thresholding. Parameters are driven by the profile (ink quality, show-through severity). Deskewing is deliberately omitted — it causes 90° rotation on these manuscripts. The binary image is used only for layout detection, not transcription.
+Each page is converted from a PDF at 150 DPI. A binary image is produced using CLAHE contrast enhancement and Sauvola adaptive thresholding. Parameters are driven by the profile (ink quality, show-through severity). Deskewing is deliberately omitted — it causes 90° rotation on these manuscripts. The binary image is used only for layout detection, not transcription.
 
 **Stage 2 — Semantic Layout Masking**
 GPT-4.1 receives the binary image and identifies the bounding box of the primary record block. The prompt explicitly instructs inclusion of headers, dates, dropcaps, and notarial marks, and exclusion of folio numbers and marginalia. The bounding box is applied to the original scan — not the binary image — to produce a clean crop for transcription.
@@ -30,21 +30,21 @@ Hard rules applied after LLM correction that cannot be overridden: ç→z, tilde
 
 ### Key Design Decisions
 
-**No line segmentation** — Traditional HTR pipelines require line segmentation followed by line-level alignment with ground truth. Segmentation errors on historical cursive compound into large CER penalties. The VLM-native approach eliminates this failure mode entirely.
+**No line segmentation** — Traditional HTR pipelines require line segmentation followed by line-level alignment with ground truth. Segmentation errors on historical cursive compound into large CER penalties. The VLM-native approach eliminates this failure mode.
 
 **Original scan for transcription** — CLAHE preprocessing inverts image polarity (mean pixel ~29, dark background). The original scan (mean pixel ~220) is used for all VLM transcription calls. Preprocessing is only used for layout bbox detection.
 
-**Profile without ground truth** — The pipeline requires no ground truth at inference time. The scribal profile is built purely from visual analysis of the first page. For unknown sources with no prior profile, GPT-4.1 builds a visual profile on the fly.
+**Profile without ground truth** — The pipeline requires no ground truth at inference time. The scribal profile is built purely from visual analysis of the input page using GPT-4.1.
 
-**3-tile approach** — GPT-4.1 truncates output on dense full-page manuscript images. Splitting into three overlapping tiles forces focus on ~8-10 lines at a time, achieving 24/24 line count match on source_1.
+**3-tile approach** — GPT-4.1 truncates output on dense full-page manuscript images. Splitting into three overlapping tiles forces focus on ~8-10 lines at a time.
 
 **Temperature=0.0** — All transcription calls use temperature=0.0 for maximum determinism. Profile building uses temperature=0.2 for exploratory visual analysis.
 
 ### Evaluation
 
-CER computed using NFC unicode normalization only — no accent stripping, no lowercasing. Blank lines removed from both prediction and ground truth before scoring. Line count match reported alongside CER as a diagnostic.
+CER computed using NFC unicode normalization only — no accent stripping, no lowercasing. Blank lines were removed from both prediction and ground truth before scoring. Line count match reported alongside CER as a diagnostic.
 
-Internal evaluation is on page 1 ground truth only (single GT page per source). True evaluation CER computed by RenAIssance on held-out pages.
+Internal evaluation is on page 1, ground truth only (single GT page per source). True evaluation CER computed by RenAIssance on held-out pages.
 
 ### Results
 
