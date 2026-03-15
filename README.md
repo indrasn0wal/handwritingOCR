@@ -50,11 +50,11 @@ Internal evaluation is on page 1 ground truth only (single GT page per source). 
 
 | Source | Century | CER | WER |
 |--------|---------|-----|-----|
-| source_1_1857 | 19th | 6.90% | 21.35% |
-| source_2_1744 | 18th | 13.96% | 37.04% |
-| source_3_pleito | 16th-17th | 14.72% | 39.82% |
+| source_1_1857 | 17th | 6.90% | 21.35% |
+| source_2_1744 | 17th | 13.96% | 37.04% |
+| source_3_pleito | 17th | 14.72% | 39.82% |
 | source_4_inquisicion | 17th | 17.60% | 45.50% |
-| source_5_1606 | 16th-17th | 12.06% | 46.39% |
+| source_5_1606 | 17th | 12.06% | 46.39% |
 | **Macro Average** | | **13.05%** | **38.02%** |
 
 ## Results
