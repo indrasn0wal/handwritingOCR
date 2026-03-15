@@ -1,0 +1,2 @@
+# handwritingOCR
+Spanish Handwriting OCR
