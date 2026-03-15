@@ -1,0 +1,52 @@
+{
+  "source_id": "source_1_1857",
+  "language": "Spanish",
+  "century": "17th",
+  "hand_profile": {
+    "script_style": "Spanish notarial cursive, late 18th to early 19th-century, with highly regular, slanted, and flourished letterforms typical of formal legal documents.",
+    "letter_formations": {
+      "u_v": "u and v are visually distinguishable; 'u' is rounded and open at the bottom, 'v' is pointed.",
+      "f_s": "f and s are distinguishable; 'f' has a crossbar and descender, 's' is long-s in medial positions and round-s at the end.",
+      "s": "both long-s and round-s are present; long-s is used medially, round-s terminally.",
+      "r": "straight r, not rotunda.",
+      "a": "single-compartment, open at the top, with a slight rightward flourish.",
+      "e": "small, open loop, sometimes with a pronounced upper flourish."
+    },
+    "abbreviation_inventory": [
+      {
+        "symbol": "Q̄",
+        "expansion": "que",
+        "example": "Q̄"
+      },
+      {
+        "symbol": "D.",
+        "expansion": "Don/Doña",
+        "example": "D. María"
+      }
+    ],
+    "ink_quality": "consistent",
+    "show_through_severity": "mild",
+    "marginalia_position": "upper left margin and upper center margin",
+    "marginalia_style": "same hand",
+    "has_dropcap": true,
+    "dropcap_description": "Large, highly flourished 'E' at the beginning of the main text, occupying several lines in height.",
+    "line_density": 26,
+    "word_spacing": "normal",
+    "special_challenges": [
+      "Highly flourished capitals can obscure adjacent letters",
+      "Long descenders and ascenders overlap lines",
+      "Some abbreviations use archaic symbols",
+      "Occasional ink blots on flourishes"
+    ],
+    "curator_rules": [
+      "u and v are used interchangeably",
+      "f and s are used interchangeably",
+      "ç old spelling is always modern z",
+      "accents are inconsistent — transcribe exactly as written",
+      "horizontal cap over letter means n follows",
+      "capped q means ue follows",
+      "long-s and round-s both present — transcribe as written",
+      "abbreviation marks: transcribe the expansion not the symbol"
+    ]
+  }
+}

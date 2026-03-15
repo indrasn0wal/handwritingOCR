@@ -1,0 +1,56 @@
+{
+  "source_id": "source_2_1744",
+  "language": "Spanish",
+  "century": "17th",
+  "hand_profile": {
+    "script_style": "Humanistic cursive with clear, rounded forms and moderate slant, typical of 18th-century notarial hands in Spain. The script is legible, with consistent letter height and spacing, and some flourished capitals.",
+    "letter_formations": {
+      "u_v": "u and v are visually distinct; 'u' is rounded and 'v' is pointed.",
+      "f_s": "f and s are visually distinct; 'f' has a crossbar, 's' is long-s in medial positions and round-s at word end.",
+      "s": "both long-s (ſ) in medial positions and round-s at word end are present.",
+      "r": "straight r, not rotunda.",
+      "a": "single-compartment, open at the top, resembling modern 'a'.",
+      "e": "open, rounded, with a clear loop, similar to modern 'e'."
+    },
+    "abbreviation_inventory": [
+      {
+        "symbol": "q̃",
+        "expansion": "que",
+        "example": "q̃uien"
+      },
+      {
+        "symbol": "dho",
+        "expansion": "dicho",
+        "example": "dho"
+      },
+      {
+        "symbol": "V. S.",
+        "expansion": "Vuestra Señoría",
+        "example": "V. S."
+      }
+    ],
+    "ink_quality": "consistent",
+    "show_through_severity": "mild",
+    "marginalia_position": "left margin, vertical orientation and top left corner",
+    "marginalia_style": "different hand, more cursive and compressed",
+    "has_dropcap": false,
+    "dropcap_description": null,
+    "line_density": 28,
+    "word_spacing": "normal",
+    "special_challenges": [
+      "Some abbreviations require contextual expansion",
+      "Marginalia is in a different, less legible hand",
+      "Occasional ink bleed and paper damage at edges"
+    ],
+    "curator_rules": [
+      "u and v are used interchangeably",
+      "f and s are used interchangeably",
+      "ç old spelling is always modern z",
+      "accents are inconsistent — transcribe exactly as written",
+      "horizontal cap over letter means n follows",
+      "capped q means ue follows",
+      "long-s and round-s both present — transcribe as written",
+      "abbreviation marks: transcribe the expansion not the symbol"
+    ]
+  }
+}

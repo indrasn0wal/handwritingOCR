@@ -1,0 +1,58 @@
+{
+  "source_id": "source_3_pleito",
+  "language": "Spanish",
+  "century": "17th",
+  "hand_profile": {
+    "script_style": "Humanistic cursive with elements of Spanish notarial hand, featuring upright, legible, and moderately flourished letterforms. The script is formal but not overly decorative, with clear separation between words and lines.",
+    "letter_formations": {
+      "u_v": "Visually distinguishable; 'u' is rounded and open at the bottom, while 'v' is pointed and more angular.",
+      "f_s": "Generally distinguishable; 'f' has a crossbar and descender, while 's' appears both as long-s and round-s.",
+      "s": "Both long-s (ſ) and round-s are present; long-s is used medially, round-s at the end of words.",
+      "r": "Straight r is predominant, with occasional use of a slightly rotunda form.",
+      "a": "Single-compartment, open at the top, resembling a modern 'a' but with a more angular upper stroke.",
+      "e": "Small, open, and rounded, with a clear horizontal cross-stroke."
+    },
+    "abbreviation_inventory": [
+      {
+        "symbol": "q̃",
+        "expansion": "que",
+        "example": "q̃ se dello en"
+      },
+      {
+        "symbol": "dho",
+        "expansion": "dicho",
+        "example": "del dho Don Antonio"
+      },
+      {
+        "symbol": "V. S.",
+        "expansion": "Vuestra Señoría",
+        "example": "V. S. responde"
+      }
+    ],
+    "ink_quality": "consistent",
+    "show_through_severity": "mild",
+    "marginalia_position": "upper right margin and top margin",
+    "marginalia_style": "different hand, more informal and smaller script",
+    "has_dropcap": true,
+    "dropcap_description": "Large, highly flourished 'S' occupying several lines at the beginning of the main text.",
+    "line_density": 27,
+    "word_spacing": "normal",
+    "special_challenges": [
+      "Large dropcap overlapping text",
+      "Some bleed-through from verso",
+      "Frequent abbreviations",
+      "Occasional tight ligatures",
+      "Marginalia in a different hand"
+    ],
+    "curator_rules": [
+      "u and v are used interchangeably",
+      "f and s are used interchangeably",
+      "ç old spelling is always modern z",
+      "accents are inconsistent — transcribe exactly as written",
+      "horizontal cap over letter means n follows",
+      "capped q means ue follows",
+      "long-s and round-s both present — transcribe as written",
+      "abbreviation marks: transcribe the expansion not the symbol"
+    ]
+  }
+}

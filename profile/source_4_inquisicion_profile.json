@@ -1,0 +1,57 @@
+{
+  "source_id": "source_4_inquisicion",
+  "language": "Spanish",
+  "century": "17th",
+  "hand_profile": {
+    "script_style": "Humanistic cursive with elements of Spanish documentary hand, typical of 17th-century notarial and legal manuscripts; moderately sloped, with fluid, connected strokes and some flourished ascenders and descenders.",
+    "letter_formations": {
+      "u_v": "Generally distinguishable; 'u' is rounded and open at the bottom, while 'v' has a pointed bottom and is more angular.",
+      "f_s": "Distinguishable; 'f' has a crossbar and descends below the baseline, while 's' appears in both long and round forms.",
+      "s": "Both long-s (ſ) and round-s are present; long-s is used medially, round-s at the end of words.",
+      "r": "Straight r is predominant, with occasional use of a more rounded or slightly rotunda form.",
+      "a": "Single-compartment, open at the top right, sometimes with a slight flourish.",
+      "e": "Small, open, with a distinct loop at the top, often connected to the following letter."
+    },
+    "abbreviation_inventory": [
+      {
+        "symbol": "q̃",
+        "expansion": "que",
+        "example": "q̃ algunos"
+      },
+      {
+        "symbol": "d̃o",
+        "expansion": "dicho",
+        "example": "d̃o domingo"
+      },
+      {
+        "symbol": "ſ̃a",
+        "expansion": "señora",
+        "example": "ſ̃a virgen"
+      }
+    ],
+    "ink_quality": "variable",
+    "show_through_severity": "mild",
+    "marginalia_position": "upper left margin, running parallel to the main text block",
+    "marginalia_style": "same hand",
+    "has_dropcap": false,
+    "dropcap_description": null,
+    "line_density": 20,
+    "word_spacing": "tight",
+    "special_challenges": [
+      "ink fading in some areas",
+      "tight word spacing causing letter crowding",
+      "flourished ascenders and descenders obscure adjacent lines",
+      "abbreviations with ambiguous marks"
+    ],
+    "curator_rules": [
+      "u and v are used interchangeably",
+      "f and s are used interchangeably",
+      "ç old spelling is always modern z",
+      "accents are inconsistent — transcribe exactly as written",
+      "horizontal cap over letter means n follows",
+      "capped q means ue follows",
+      "long-s and round-s both present — transcribe as written",
+      "abbreviation marks: transcribe the expansion not the symbol"
+    ]
+  }
+}

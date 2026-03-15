@@ -1,0 +1,58 @@
+{
+  "source_id": "source_5_1606",
+  "language": "Spanish",
+  "century": "17th",
+  "hand_profile": {
+    "script_style": "Humanistic cursive with legal notarial features, typical of 17th-century Spanish documents. The hand is moderately sloped, with fluid, connected strokes and some flourished capitals.",
+    "letter_formations": {
+      "u_v": "Generally distinguishable; 'u' is rounded and open, while 'v' is pointed and often used at word-initial position.",
+      "f_s": "Visually distinguishable; 'f' has a crossbar and descender, while 's' appears both as long-s and round-s.",
+      "s": "Both long-s (ſ) in initial/medial positions and round-s in final positions are present.",
+      "r": "Mostly straight r, with occasional use of a more rounded or rotunda form after certain letters.",
+      "a": "Single-compartment, open at the top, sometimes with a slight flourish.",
+      "e": "Small, open loop, sometimes with a slightly upward tail."
+    },
+    "abbreviation_inventory": [
+      {
+        "symbol": "q̃",
+        "expansion": "que",
+        "example": "q̃ en el año"
+      },
+      {
+        "symbol": "dho",
+        "expansion": "dicho",
+        "example": "dho santiago"
+      },
+      {
+        "symbol": "V.m.",
+        "expansion": "Vuestra merced",
+        "example": "que a V.m. pido"
+      }
+    ],
+    "ink_quality": "variable",
+    "show_through_severity": "mild",
+    "marginalia_position": "upper left margin, faint and partially cut off",
+    "marginalia_style": "same hand",
+    "has_dropcap": true,
+    "dropcap_description": "Large, ornate capital 'E' at the beginning of the text, extending into the left margin.",
+    "line_density": 28,
+    "word_spacing": "tight",
+    "special_challenges": [
+      "Edge damage and loss of text on the right margin",
+      "Ink blots obscuring some words in the first line",
+      "Faint marginalia difficult to decipher",
+      "Some abbreviation marks are ambiguous",
+      "Show-through from verso slightly interferes with legibility"
+    ],
+    "curator_rules": [
+      "u and v are used interchangeably",
+      "f and s are used interchangeably",
+      "ç old spelling is always modern z",
+      "accents are inconsistent — transcribe exactly as written",
+      "horizontal cap over letter means n follows",
+      "capped q means ue follows",
+      "long-s and round-s both present — transcribe as written",
+      "abbreviation marks: transcribe the expansion not the symbol"
+    ]
+  }
+}
